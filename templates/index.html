@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Sukarobot Detector</title>
+
+<link rel="stylesheet"
+href="/static/css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<img src="/static/img/logo.png">
+
+</div>
+
+<div>
+
+<h1>Sukarobot Detector</h1>
+
+<p>YOLOv8 Object Detection System</p>
+
+</div>
+
+</header>
+
+<nav>
+
+<button>Dashboard</button>
+
+<button>Camera</button>
+
+<button>Upload Image</button>
+
+<button>History</button>
+
+<button>Export</button>
+
+</nav>
+
+<main>
+
+    <section class="left">
+
+        <div class="camera-container">
+
+            <video id="video" autoplay playsinline></video>
+
+            <canvas id="canvas" style="display:none;"></canvas>
+
+        </div>
+
+        <div class="camera-button">
+
+            <button id="startCamera">Start Camera</button>
+
+            <button id="stopCamera">Stop Camera</button>
+
+            <button id="captureImage">Detect</button>
+
+        </div>
+
+    </section>
+
+    <section class="right">
+
+        <h2>Detection Result</h2>
+
+        <div id="result">
+
+<table id="resultTable">
+
+<tr>
+
+<th>Object</th>
+
+<th>Jumlah</th>
+
+</tr>
+
+</table>
+
+</div>
+
+    </section>
+
+</main>
+
+<footer>
+
+<div>
+
+Model :
+
+<span id="model">
+
+YOLOv8
+
+</span>
+
+</div>
+
+<div>
+
+Status :
+
+<span id="status">
+
+Online
+
+</span>
+
+</div>
+
+<div>
+
+FPS :
+
+<span id="fps">
+
+0
+
+</span>
+
+</div>
+
+</footer>
+
+<script src="/static/js/script.js"></script>
+
+</body>
+
+</html>
